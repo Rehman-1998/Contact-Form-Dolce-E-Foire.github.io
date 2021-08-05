@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- ******* Custom CSS Link Start ************** -->
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- ******* Custom CSS Link End  ************** -->
+
+    <!--********** Popin Font Link Start *****************  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <!--********** Popin Font Link End *****************  -->
+
+    <!-- *********** Font Awosome ***************** -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="//unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="//unpkg.com/bootstrap-select@1.12.4/dist/css/bootstrap-select.min.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="//unpkg.com/bootstrap-select-country@4.0.0/dist/css/bootstrap-select-country.min.css"
+      type="text/css"
+    />
+
+    <!-- *********** Font Awosome ***************** -->
+
+    <title>Form</title>
+  </head>
+  <body>
+    <!--*********** Contact US  Form ****************  -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 main-form">
+          <!-- ****** Contact Information -->
+          <div class="contact-info">
+            <p>Contact information</p>
+            <input type="email" placeholder="Email" />
+          </div>
+          <!--******** Delivery method ***********-->
+          <div class="Delivery-method mt-5 mb-5">
+            <p>Delivery method</p>
+            <div id="ship-radio" class="input-group-text">
+              <input
+                class="form-check-input mt-0"
+                type="radio"
+                name="delivery-method"
+                value="ship"
+              />
+              <span><i class="fal fa-shipping-fast ms-3"></i></span>
+              <span class="ms-3">Ship</span>
+            </div>
+            <div class="input-group-text">
+              <input
+                class="form-check-input mt-0"
+                type="radio"
+                name="delivery-method"
+                value="pickup"
+              />
+              <span><i class="far fa-store-alt ms-3"></i></span>
+              <span class="ms-3">Pickup</span>
+            </div>
+          </div>
+
+          <!--**************** Shipping Address ************ -->
+          <div class="shipping-info mb-5">
+            <p>Shipping address</p>
+            <div class="name-info">
+              <input type="text" placeholder="First Name" />
+              <input type="text" placeholder="Last Name" />
+            </div>
+            <input type="text" placeholder="Address" />
+            <input type="text" placeholder="Appartment, suite, etc." />
+            <input type="text" placeholder="City" />
+            <div class="name-info">
+              <select
+                title="Country"
+                class="selectpicker countrypicker"
+              ></select>
+              <select title="State" class="selectpicker countrypicker"></select>
+            </div>
+            <input type="text" placeholder="Phone" />
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck" />
+              <label class="form-check-label" for="gridCheck">
+                Save this information for the next time
+              </label>
+            </div>
+            <div class="submit-buttons">
+              <span class="shipping-button">Continue to Shopping</span>
+              <span class="return-button">Return to cart</span>
+            </div>
+          </div>
+        </div>
+        <!--********* Futher Product  Section Start  ************* -->
+        <div class="col-md-5 mt-5 main-futher-product">
+          <div class="row futher-product">
+            <div
+              class="col-3 d-flex justify-content-between align-items-center"
+            >
+              <img src="images/chocolate.jpg" alt="" />
+            </div>
+            <div class="col-6 my-auto">
+              <p>25 Pieces Assorted chocolate box</p>
+            </div>
+            <div class="col-3 my-auto">
+              <p class="">AED 180.00</p>
+            </div>
+          </div>
+
+          <div class="row mt-5 futher-product">
+            <div
+              class="col-3 d-flex justify-content-between align-items-center"
+            >
+              <img src="images/chocolate.jpg" alt="" />
+            </div>
+            <div class="col-6 my-auto">
+              <p>
+                25 Pieces Assorted chocolate box 25 Pieces Assorted chocolate
+                box
+              </p>
+            </div>
+            <div class="col-3 my-auto">
+              <p class="">AED 180.00</p>
+            </div>
+          </div>
+
+          <div class="futher-product mt-5 d-flex">
+            <input type="text" placeholder="Discount Code" />
+            <button class="shipping-button">Apply</button>
+          </div>
+
+          <div class="futher-product clearfix mt-5">
+            <p class="float-start">Sub-total</p>
+            <p class="float-end">AED 498.00</p>
+          </div>
+          <div class="futher-product clearfix">
+            <p class="float-start">Shipping</p>
+            <p class="float-end">AED 498.00</p>
+          </div>
+          <div class="futher-product clearfix">
+            <p class="float-start">Taxes (estimated)</p>
+            <p class="float-end">AED 498.00</p>
+          </div>
+          <div class="futher-product clearfix">
+            <p class="float-start">Total</p>
+            <p class="float-end">AED 498.00</p>
+          </div>
+
+          <div class="futher-product">
+            <hr />
+          </div>
+
+          <div class="futher-product clearfix">
+            <p class="float-start">Total</p>
+            <p class="float-end clearfix">AED 498.00</p>
+          </div>
+          <div class="futher-product">
+            <hr />
+          </div>
+        </div>
+        <!--********* Futher Product  Section End ************* -->
+      </div>
+    </div>
+
+    <script>
+      $(".countrypicker").countrypicker();
+    </script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+    <script src="//unpkg.com/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="//unpkg.com/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="//unpkg.com/bootstrap-select@1.12.4/dist/js/bootstrap-select.min.js"></script>
+    <script src="//unpkg.com/bootstrap-select-country@4.0.0/dist/js/bootstrap-select-country.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,363 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',
+    sans-serif;
+}
+
+.main-form{
+    border-right: 1px solid #8B8B8B;
+    padding-top: 50px;
+    padding-right: 30px !important;
+}
+
+
+
+/****** PlaceHolder Radio Check and Focus Active  CSS ************/
+
+::placeholder {
+    color:#8B8B8B !important;
+    font-size:14px;
+    letter-spacing:  1px;
+}
+input[type="text"]:focus-visible {
+    outline: 0px;
+}
+input[type="email"]:focus-visible{
+    outline: 1px solid black;
+}
+.form-check-input:checked {
+    background-color: black;
+    border-color: black;
+}
+
+.form-check-input:focus {
+    border-color: unset;
+    outline: 0;
+    box-shadow: unset;
+}
+input[type=file]:focus,
+input[type=checkbox]:focus,
+input[type=radio]:focus {
+    outline: unset !important;
+    outline-offset: unset !important;
+}
+
+
+
+/************ Contact Information CSS ******************/
+
+.contact-info p{
+    margin-bottom: 8px ;
+    font-size: 20px;
+}
+.contact-info input[type="email"] {
+    padding: 8px;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid #ced4da;
+    color:black;
+    letter-spacing: 1px;
+}
+
+/* ***************   Delivery  ****************** */
+
+.Delivery-method p{
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+.Delivery-method .input-group-text{
+    background-color: white;
+    border-radius: unset;
+    padding: 8px;
+}
+.Delivery-method i {
+        font-size: 16px;
+        color: #8B8B8B;
+}
+.Delivery-method span{
+    font-size: 14px;
+    color: #8B8B8B;
+    letter-spacing: 1px;
+}
+#ship-radio{
+    border: unset;
+    border-top: 1px solid #ced4da;
+    border-right: 1px solid #ced4da;
+    border-left: 1px solid #ced4da;
+}
+.Delivery-method span img{
+    width: 20px;
+    height: 20px;
+}
+
+
+
+/* ************ Shipping information ************* */
+
+.name-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.shipping-info .name-info input[type="text"] {
+    width: 49%;
+    padding: 8px;
+}
+.shipping-info p{
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+.shipping-info input[type="text"]{
+    width:100%;
+    padding: 8px;
+    border-radius: unset;
+    border: 1px solid #ced4da;
+    margin-bottom: 15px;
+}
+.form-check-label {
+    color:#8B8B8B;
+}
+.form-check-input[type=checkbox] {
+    border-radius: unset;
+}
+
+/************ Country Input Start ***************/
+
+.dropdown-menu>li>a {
+    white-space: normal !important;
+}
+
+.name-info>.bootstrap-select.btn-group .dropdown-toggle .filter-option {
+    width: 95%;
+    border-right: 1px solid #ced4da;
+}
+
+.name-info>.btn-group.bootstrap-select.countrypicker.f16 {
+    width: 49%;
+    margin-bottom: 15px;
+}
+
+.name-info>div>button.btn.dropdown-toggle.bs-placeholder.btn-default {
+    border-radius: 0px !important;
+}
+
+.name-info>div.bootstrap-select .dropdown-toggle:focus {
+    outline: 1px solid black !important;
+    outline-offset: 0px;
+    box-shadow: 0px !important;
+}
+
+.name-info>div.bootstrap-select>.dropdown-toggle.bs-placeholder,
+.bootstrap-select>.dropdown-toggle.bs-placeholder:active,
+.bootstrap-select>.dropdown-toggle.bs-placeholder:focus,
+.bootstrap-select>.dropdown-toggle.bs-placeholder:hover {
+    color: #999;
+    background-color: white;
+    box-shadow: unset;
+}
+
+.dropdown-toggle::after {
+    border-top: 0em solid;
+}
+
+.dropup .dropdown-toggle::before {
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: 0;
+    border-right: 0em solid transparent;
+    border-bottom: 0em solid;
+    border-left: .3em solid transparent;
+    /* transform: rotate(180deg); */
+}
+
+.dropup .dropdown-toggle::after {
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: 0;
+    border-right: 0em solid transparent;
+    border-bottom: 0em solid;
+    border-left: .3em solid transparent;
+    transform: rotate(180deg);
+}
+
+/************ Country Input End **************
+
+
+/* *********** shipping and back to cart Button ************** */
+
+.submit-buttons{
+    margin-top:40px;
+    margin-bottom:40px;
+}
+.submit-buttons span{
+    background-color: black;
+    color:white;
+    padding: 10px 8px;
+}
+
+/* .shipping-button{
+     background-color: black;
+     border: none;
+     color: white;
+     padding: 15px 32px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     letter-spacing: 1px;
+     font-size: 14px;
+     margin: 4px 2px;
+     cursor: pointer;
+}
+.return-button {
+     background-color: white;
+     border: none;
+     color: black;
+     padding: 15px 65px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 14px;
+     margin: 4px 2px;
+     cursor: pointer;
+}
+ .return-button:hover {
+     background-color: black;
+     color: white;
+ } */
+
+ .main-futher-product{
+     padding-top: 50px;
+ }
+
+ .futher-product{
+    padding-left: 50px;
+    margin-right:0px !important;
+    margin-left: 0px !important;
+ }
+
+.futher-product img{
+    width:70px;
+    height:70px;
+    object-fit: cover;
+    border:1px solid black;
+}
+.futher-product p{
+    font-size:14px;
+    color: gray;
+    /* padding-left: 10px; */
+    margin-bottom:0px;
+
+}
+
+.futher-product input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: unset;
+    border-top: 1px solid #8B8B8B;
+    border-bottom: 1px solid #8B8B8B;
+    border-left: 1px solid #8B8B8B;
+}
+.futher-product button{
+         background-color: black;
+         border: none;
+         color: white;
+         padding: 0px 32px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         margin:0px;
+         font-size: 14px;
+         letter-spacing: 1px;
+         cursor: pointer;
+}
+
+.total{
+    margin-top:30px;
+    margin-bottom:30px;
+    border-top: 1px solid;
+}
+
+ .futher-product>div.col-3.d-flex.justify-content-between.align-items-center {
+     padding-left: 0px;
+     padding-right: 0px;
+ }
+
+
+
+
+
+
+
+
+
+
+ /* ********* Media Query for Ipad and Mobile *************** */
+
+
+ @media screen and (max-width:991px)
+ {
+     .name-info{
+         display:block;
+     }
+     .contact-info p{
+         font-size:16px;
+     }
+     .Delivery-method p{
+         font-size:16px;
+     }
+     .shipping-info p{
+         font-size:16px;
+     }
+     ::placeholder {
+         
+         font-size: 12px;
+         
+     }
+     .shipping-info .name-info input[type="text"]{
+         width:100%;
+     }
+     /* .submit-buttons {
+         display: block;
+         text-align: center;
+     } */
+     .shipping-button{
+         font-size:13px;
+     }
+     .return-button{
+         font-size:13px;
+     }
+    .name-info>.btn-group.bootstrap-select.countrypicker.f16 {
+         width: 100%;
+         margin-bottom: 15px;
+     }
+
+     /************* Futher Product Media Query ****************  */
+
+     /* .main-futher-product {
+         padding-top: 0px;
+     } */
+     .futher-product {
+         padding-left: 0px;
+         margin-right:0px !important;
+         margin-left: 0px !important;
+     }
+     /* .futher-product img {
+         width: 70px;
+         height: 70px;
+     } */
+     .futher-product p{
+         font-size:12px;
+         padding-left: 0px;
+     }
+     .futher-product>div.col-3.d-flex.justify-content-between.align-items-center {
+         padding-left: 0px;
+         padding-right: 0px;
+     }
+ }
